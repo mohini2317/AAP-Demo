@@ -3,7 +3,7 @@
         "hostvars": {}
     },
     "linux-webservers": {
-        "hosts": ["ec2-34-227-95-69.compute-1.amazonaws.com"],
+        "hosts": ["ec2-23-20-227-132.compute-1.amazonaws.com"],
         "vars": {
             "ansible_ssh_user": "ec2-user" 
         },
