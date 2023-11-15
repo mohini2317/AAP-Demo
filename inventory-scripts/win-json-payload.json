@@ -3,7 +3,7 @@
       "hostvars": {}
   },
   "win-webservers": {
-      "hosts": ["ec2-204-236-214-111.compute-1.amazonaws.com"],
+      "hosts": ["ec2-3-95-63-227.compute-1.amazonaws.com"],
       "vars": {
           "ansible_ssh_user": "ec2-user", 
           "ansible_connection": "winrm",
