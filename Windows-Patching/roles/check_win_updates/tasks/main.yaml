@@ -32,8 +32,9 @@
 - name: Install Updates with Extracted KB Numbers
   win_shell: |
     $kbNumbers = "{{ kb_numbers.split(',') | join('`,`') }}"
+    $kb = "890830"
 #    foreach ($kb in $kbNumbers.split(',')) {
-    $command = "wusa.exe /quiet /norestart /kb:890830"
+    $command = "wusa.exe /quiet /norestart /kb:$kb"
     Invoke-Expression -Command $command
 #    }
   when: kb_numbers is defined and kb_numbers != ""
