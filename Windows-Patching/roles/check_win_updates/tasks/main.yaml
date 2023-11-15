@@ -15,7 +15,7 @@
 
 - name: Extract KB Numbers from Available Updates
   set_fact:
-    kb_numbers: "{{ available_updates.updates | map(attribute='hotfix_id') | list | join(',') }}"
+    kb_numbers: "{{ available_updates.updates | map(attribute='kb_article_ids') | list | join(',') }}"
 
 - name: Display Extracted KB Numbers
   debug:
