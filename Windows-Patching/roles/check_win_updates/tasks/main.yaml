@@ -21,10 +21,16 @@
   debug:
     var: kb_numbers
 
-- name: Install Updates with Extracted KB Numbers
-  win_updates:
-    category_names: SecurityUpdates
-    hotfix_id : "{{ kb_numbers }}"
-    state: installed
-  when: kb_numbers is defined and kb_numbers != ""
+#- name: Install Updates with Extracted KB Numbers
+#  win_updates:
+#    category_names: SecurityUpdates
+#    hotfix_id : "{{ kb_numbers }}"
+#    state: installed
+#  when: kb_numbers is defined and kb_numbers != ""
 #      become: yes
+
+- name: Install Updates with Extracted KB Numbers
+  win_shell: |
+    $kbNumbers = "{{ kb_numbers.split(',') | join '`,`' }}"
+    Install-WindowsUpdate -KBArticleID $kbNumbers -AcceptAll -AutoReboot
+  when: kb_numbers is defined and kb_numbers != ""
