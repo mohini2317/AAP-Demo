@@ -24,7 +24,7 @@
 - name: Install Updates with Extracted KB Numbers
   win_updates:
     category_names: SecurityUpdates
-    hotfixes: "{{ kb_numbers }}"
+    kb: "{{ kb_numbers }}"
     state: installed
   when: kb_numbers is defined and kb_numbers != ""
 #      become: yes
