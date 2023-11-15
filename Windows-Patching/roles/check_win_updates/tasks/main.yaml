@@ -31,6 +31,6 @@
 
 - name: Install Updates with Extracted KB Numbers
   win_shell: |
-    $kbNumbers = "{{ kb_numbers.split(',') | join '`,`' }}"
+    $kbNumbers = "{{ kb_numbers.split(',') | join('`,`') }}"
     Install-WindowsUpdate -KBArticleID $kbNumbers -AcceptAll -AutoReboot
   when: kb_numbers is defined and kb_numbers != ""
