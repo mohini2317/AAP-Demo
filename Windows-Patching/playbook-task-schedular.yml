@@ -1,0 +1,15 @@
+---
+- name: Schedule Task and Run PowerShell Script
+  hosts: windows_target
+  gather_facts: false
+  roles:
+    - role: task_scheduler
+      vars:
+        task_name: "MyScheduledTask"
+        task_description: "Run My PowerShell Script"
+        script_path: "C:\\Path\\To\\Your\\Script.ps1"
+        task_schedule_time: "06:00"
+    - role: powershell_script
+      vars:
+        local_script_path: "path/to/local/Script.ps1"
+        remote_script_path: "C:\\Path\\To\\Your\\Script.ps1"

@@ -1,0 +1,12 @@
+---
+- name: Create Scheduled Task
+  win_scheduled_task:
+    name: "{{ task_name }}"
+    description: "{{ task_description }}"
+    actions:
+      - path: "powershell.exe"
+        arguments: "{{ script_path }}"
+    triggers:
+      - once:
+          enabled: yes
+          at: "{{ task_schedule_time }}"

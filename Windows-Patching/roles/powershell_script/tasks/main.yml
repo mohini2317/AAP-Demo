@@ -1,0 +1,5 @@
+---
+- name: Create PowerShell Script
+  win_copy:
+    src: "{{ local_script_path }}"
+    dest: "{{ remote_script_path }}"

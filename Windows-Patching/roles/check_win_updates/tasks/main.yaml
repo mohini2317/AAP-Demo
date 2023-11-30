@@ -36,5 +36,6 @@
     $command = "wusa.exe /quiet /norestart /kb:$kb"
     Invoke-Expression -Command $command
   when: kb_numbers is defined and kb_numbers != ""
+  
 #    foreach ($kb in $kbNumbers.split(',')) {
   #    Install-WindowsUpdate -KBArticleID $kbNumbers -AcceptAll -AutoReboot
