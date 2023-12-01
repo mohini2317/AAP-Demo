@@ -1,3 +1,3 @@
 ---
 - name: Run PowerShell Script
-  win_shell: "powershell.exe -File C:/Users/mohini.rahate/awx-demo/CreateScheduledTask.ps1"
+  win_shell: "powershell.exe -File C:/Users/Administrator/Desktop/CreateScheduledTask.ps1"
