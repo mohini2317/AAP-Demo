@@ -4,6 +4,6 @@
     src: "{{ item.src }}"
     dest: "{{ item.dest }}"
   with_items:
-    - { src: "CreateScheduledTask.ps1", dest: "C:\Users\Administrator\Desktop\CreateScheduledTask.ps1" }
-    - { src: "Get-SystemStatus.ps1", dest: "C:\Users\Administrator\Desktop\Get-SystemStatus.ps1" }
+    - { src: "CreateScheduledTask.ps1", dest: "C:/Users/Administrator/Desktop/CreateScheduledTask.ps1" }
+    - { src: "Get-SystemStatus.ps1", dest: "C:/Users/Administrator/Desktop/Get-SystemStatus.ps1" }
     # Add more files as needed
