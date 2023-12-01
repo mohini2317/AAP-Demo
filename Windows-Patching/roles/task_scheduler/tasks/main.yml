@@ -1,7 +1,5 @@
 ---
 - name: Create Scheduled Task
-  collections:
-    - community.windows
   win_scheduled_task:
     name: "{{ task_name }}"
     description: "{{ task_description }}"
