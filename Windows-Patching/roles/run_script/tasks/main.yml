@@ -1,3 +1,3 @@
 ---
 - name: Run PowerShell Script
-  win_shell: "powershell.exe -File C:\Users\mohini.rahate\OneDrive - Perficient, Inc\Documents\Project\Resideo\Task\Demo\AAP-Demo\AAP-Demo-1\Windows-Patching\template\CreateScheduledTask.ps1"
+  win_shell: "powershell.exe -File C:/Users/mohini.rahate/OneDrive - Perficient, Inc/Documents/Project/Resideo/Task/Demo/AAP-Demo/AAP-Demo-1/Windows-Patching/template/CreateScheduledTask.ps1"
