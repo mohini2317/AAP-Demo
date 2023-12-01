@@ -4,6 +4,6 @@
     src: "{{ item.src }}"
     dest: "{{ item.dest }}"
   with_items:
-    - { src: "C:\Users\mohini.rahate\OneDrive - Perficient, Inc\Documents\Project\Resideo\Task\Demo\AAP-Demo\AAP-Demo-1\Windows-Patching\template\CreateScheduledTask.ps1", dest: "C:\Users\Administrator\Desktop\CreateScheduledTask.ps1" }
-    - { src: "C:\Users\mohini.rahate\OneDrive - Perficient, Inc\Documents\Project\Resideo\Task\Demo\AAP-Demo\AAP-Demo-1\Windows-Patching\template\Get-SystemStatus.ps1", dest: "C:\Users\Administrator\Desktop\Get-SystemStatus.ps1" }
+    - { src: "CreateScheduledTask.ps1", dest: "C:\Users\Administrator\Desktop\CreateScheduledTask.ps1" }
+    - { src: "Get-SystemStatus.ps1", dest: "C:\Users\Administrator\Desktop\Get-SystemStatus.ps1" }
     # Add more files as needed
