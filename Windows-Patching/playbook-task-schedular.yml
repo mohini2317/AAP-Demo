@@ -2,6 +2,8 @@
 - name: Schedule Task and Run PowerShell Script
   hosts: windows_target
   gather_facts: false
+  collections:
+    - community.windows
   roles:
     - role: task_scheduler
       vars:
