@@ -1,0 +1,7 @@
+---
+- name: Run PowerShell Script
+  hosts: windows_target
+  gather_facts: false
+  roles:
+    - copy_script
+    - run_script
