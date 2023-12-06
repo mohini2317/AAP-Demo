@@ -14,7 +14,7 @@ $trigger = New-ScheduledTaskTrigger -Once -At $targetDateTimeFormatted
 
 
 # Define parameters
-$TaskName = "MyScheduledTask"
+$TaskName = "MyScheduledTask2"
 $ScriptPath = "C:\Users\Administrator\Desktop\Get-SystemStatus.ps1"
 $Action = New-ScheduledTaskAction -Execute "powershell.exe" -Argument "-File $ScriptPath"
 #$Trigger = New-ScheduledTaskTrigger -At "12:30" -Daily
